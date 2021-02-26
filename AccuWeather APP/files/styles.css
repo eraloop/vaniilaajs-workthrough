@@ -1,0 +1,23 @@
+body{
+    background: #eeedec;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
+  .container{
+    max-width: 400px;
+  }
+
+  .not-visible{
+      display: none;
+  }
+
+  .icon img{
+      position: relative;
+      top: -50px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      width: 100%;
+      margin-bottom: -50px;
+      background: #fff;
+  }
