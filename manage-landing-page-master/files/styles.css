@@ -1,0 +1,562 @@
+
+/* start of general styles */
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+button{
+    border-radius:25px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input{
+    padding: 12px 20px;
+    border-radius: 25px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color:hsl(227, 12%, 61%);
+}
+
+p{
+    color:hsl(227, 12%, 61%);
+    padding: 10px 0;
+}
+
+.heading{
+    color: hsl(233, 12%, 13%);
+}
+h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.btn-lg{
+    background: hsl(12, 88%, 59%);
+    color: #fff;
+    padding: 12px 25px; 
+}
+
+.btn-lg:hover{
+    background:  hsl(11, 100%, 80%);
+    transition: .5s ease;
+}
+.btn-sm{
+    padding: 10px 20px;
+    background: hsl(12, 88%, 59%);
+    margin: 0 15px;
+    color: #fff;
+}
+/* end of general styles */
+
+
+/* start of style for the navigation section */
+
+.navbar{
+    padding: 3% 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+
+.list-items{
+    list-style-type: none;
+    display: block;
+}
+
+.list-items li{
+    display:inline-block;
+    font-size: 18px;
+    color: hsl(233, 12%, 13%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.list-items li:hover{
+    transform: scale(1.05);
+   color:hsl(227, 12%, 61%);
+   transition: .5s ease-out;
+}
+.Hamburger{  
+    height: 25px;
+    width: 30px;
+    border-radius: 0;
+    background-color: transparent;
+    visibility: hidden;
+    z-index:999;
+}
+
+.Show{
+    background: url("/images/icon-hamburger.svg");
+}
+
+.Close{
+    background: url("/images/icon-close.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* end of style for the navigation section */
+
+
+/* start of style for both the presentation section and what we offer */
+
+.company-presentation, .what-we-offer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-column-gap: 30px;
+    padding: 7% 15%;
+}
+.company-presentation:before{
+    content: '';
+    height: 600px;
+    width: 700px;
+    background: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    right: -100px;
+    z-index: -1;
+}
+
+
+.stats{
+    position: relative;
+        left: 90px;
+        bottom: 90px;
+        z-index: 999;
+}
+
+.what-we-offer{
+    position: relative;
+        left: 0;
+        bottom: 170px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content p{
+    padding-left: 5rem;
+}
+.heading{
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.headline{
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.headline:before{
+    content: '';
+    height: 500px;
+    width: 500px;
+    background: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;;
+    top: 150px;
+    right: 350px;
+    z-index: -1;
+}
+/* end of style for both the presentation section and what we offer */
+
+
+/* start of style for testimonial  section */
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+        left: 0;
+        bottom: 130px;
+}
+
+.testimonial-listings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.personal-testimonial{
+    margin: 1rem;
+
+}
+/* end of style for testimonial  section */
+    
+
+/* start of style for motivation section */
+.motivate-call-to-action{
+    background: hsl(12, 88%, 59%);
+    height: auto;
+}
+
+.motivate-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 14%;
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+}
+
+.motivate-content .btn-lg{
+    background: #fff;
+    color:hsl(12, 88%, 59%) ;
+    font-weight: 500;
+}
+.motivate-content .btn-lg:hover{
+    color:  hsl(11, 100%, 80%);
+}
+/* end of style for motivation section */
+
+
+/*  footer section containing all footer styles */
+.footer-container{
+    background: hsl(233, 12%, 13%);
+    color: #fff;
+    padding: 5%;
+}
+.footer-content{
+    padding: 4% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.connect-to-us li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5px;
+}
+.navigations{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1em;
+}
+
+.navigations >*, .connect-to-us> *{
+    margin: 20px 0;
+}
+
+.bottom-navigation li, .bottom-orientation li{
+    list-style-type: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 7px 0;
+    font-size: 20px;
+}
+.bottom-navigation li:hover, .bottom-orientation li:hover{
+    color:hsl(12, 88%, 59%) ;
+}
+
+.connect-to-us, .search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* end of styling for the footer section */
+
+
+/* start of media query for tablet sized screens */
+
+@media(max-width: 750px){
+
+    /* general styles */
+ul li{
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+
+}
+ul li a{
+    color:white ;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* navigation bar */
+.navbar{
+    padding: 7% 15% 0;
+}
+.call-to-action{
+    display: none;
+}
+        /* hamburger style for small screen */
+.Hamburger{  
+    visibility: visible;
+    z-index:999;
+}
+
+.list-items{
+    list-style-type: none;
+    visibility: hidden ;
+    display:block;
+    height: 300px;
+    width: 300px;
+    background: #333;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    z-index: 999;
+    /* transform: translateY(-100deg); */
+    transition: transform 10s ease-out;
+    z-index: 99999999;
+
+}
+.list-items li{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform .3s ease-out;
+    z-index: 99999999;
+}
+
+.list-items li:hover{
+    transform: scale(1.15);
+    color: red;
+    text-decoration: underline;
+}
+
+.visible{
+    visibility: visible ;
+}
+
+
+/* presentation and what we offfer */
+
+.company-presentation, .what-we-offer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    padding: 7% 15%;
+}
+
+.stats{
+    order: 1;
+    position: static;
+    padding: 10px;
+}
+.stats img{
+        height: 100%;
+        width: 100%;
+}
+.what-we-offer{
+    position: static;
+    margin: 10px;
+    padding: 10px;
+}
+
+    /* testimonial section */
+.testimonials{
+    position: static;
+    margin: 10px;
+    padding: 10px;
+}
+.company-presentation:before{
+    height: 400px;
+    width: 500px;
+}
+}
+
+@media(max-width: 400px){
+    /* *{
+        display: none;
+    } */
+    .company-presentation, .what-we-offer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 7% 15%;
+     }
+
+     .stats{
+         display: flex;
+         order: 1;
+     }
+     .stats img{
+        height: 300px;
+        width: 300px;
+        z-index: -5;
+        }
+ 
+     .branding{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        order: 2;
+     }
+    .motivate-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10%;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+    }
+    .motivate-content > *{
+            padding: 1em 0;
+    }
+
+    .call-to-action .btn-lg{
+            display: none;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .search{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .search-bar{
+        display: flex;
+        align-items: center;
+    }
+
+    .navigations{
+        order: 2; 
+        padding: 0 5%;
+    }
+    .connect-to-us{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .connect-to-us img{
+        order: 2;
+    }
+    .connect-to-us .logo{
+        width: 180px;
+        height: 25px;
+    }
+    .connect-to-us ul img{
+        width: 25px;
+    }
+    .connect-to-us ul{
+        order: 1;
+    }
+    .right{
+        order: 44;
+    }
+    .connect-to-us li{
+        padding: 0 5px;
+    }
+        
+    input{
+        padding: 13px 20px;
+    }
+    .search-bar .btn-sm{
+        padding: 13px 25px; 
+    }
+
+        /* start of navigation style for smaller screens */
+    .list-items{
+        visibility: hidden ;
+        height: auto;
+        width: 270px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction:column;
+        z-index: 9999999;
+    }
+
+    .list-items li{
+        font-size: 16px;
+        padding: 15px;
+    }
+    .visible{
+        visibility: visible ;
+    }
+        /* end of navigation styline for smaller screens */
+        
+        /* start of company presentation style */
+
+        .company-presentation:before{
+            height: 350px;
+            width: 400px;
+        }
+    
+        .headline:before{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: -100px;
+            right: -200px;
+            z-index: -1;
+        }
+}

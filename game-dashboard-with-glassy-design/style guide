@@ -1,0 +1,22 @@
+background (main) = linear-gradient(to right top, #65dfc9, #6cdbeb);
+background (glass) =   background: linear-gradient(
+                        to right bottom,
+                        rgba(255, 255, 255, 0.7),
+                        rgba(255, 255, 255, 0.3)
+                    );
+
+background (circles) =  background: linear-gradient(
+                        to right bottom,
+                        rgba(255, 255, 255, 0.8),
+                        rgba(255, 255, 255, 0.3)
+                    );
+background (dashboard) =   background: linear-gradient(
+                            to right bottom,
+                            rgba(255, 255, 255, 0.7),
+                            rgba(255, 255, 255, 0.3)
+                        );
+background(card) =   background: linear-gradient(
+                    to left top,
+                    rgba(255, 255, 255, 0.8),
+                    rgba(255, 255, 255, 0.5)
+                );

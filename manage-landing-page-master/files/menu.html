@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  /* border: 1px solid red; */
+    }
+    .ham {
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    /* show the menu image */
+    background-image: url("/images/icon-hamburger.svg");
+    background-size: 100%;
+    }
+    .showClose {
+        background-image: url("/images/icon-close.svg");
+    }  
+
+    .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+
+    }
+
+    .showNav{
+        display: block;
+        padding: 10px;
+        border: 1px solid;
+        box-shadow: 10px 0px 10px 10px;
+        transform: translateY(0);
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    ul li{
+        padding: 10px;
+        margin: 10px;
+        list-style-type: none;
+
+    }
+    ul li a{
+        color:white ;
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+</style>
+<body>
+    
+    <button class="ham"></button>
+    <nav class="navbar">
+      <ul>
+        <li><a class="menuLink" href="#">Home</a></li>
+        <li><a class="menuLink" href="#">Profile</a></li>
+        <li><a class="menuLink" href="#">About</a></li>
+        <li><a class="menuLink" href="#">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <script>
+        var navbar = document.querySelector(".navbar")
+        var ham = document.querySelector(".ham")
+
+        ham.addEventListener("click", toggleHamburger)
+
+        function toggleHamburger(){
+            navbar.classList.toggle("showNav")
+            ham.classList.toggle("showClose")
+        }
+
+        var menuLinks = document.querySelectorAll(".menuLink")
+
+        menuLinks.forEach( 
+            function(menuLink) { 
+            menuLink.addEventListener("click", toggleHamburger) 
+            }
+        )
+    </script>
+</body>
+</html>

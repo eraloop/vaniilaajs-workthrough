@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'montserrat', 'Roboto', helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.7;
+    /* letter-spacing: 1.1px; */
+    font-weight: 500;
+    
+}
+.btn{
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    font-size: 14px;
+    padding: 5px;
+}
+
+h1,h2,h3,h4{
+    font-family: 'poppins';
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+
+p{
+    font-size: 16px;
+}
+
+
+
+nav{
+    padding: 4% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 3% 0;
+    align-items: center;
+}
+
+.top-presentation{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4em;
+    padding: 1% 4%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.presentation h1{
+    font-size: 2.2em;
+    margin: 1em 0;
+}
+.presentation p{
+    text-align: center;
+    margin: 1em 0;
+    padding: 0 15em;
+}
+.presentation button{
+    margin: 1em 0;
+}
+
+.presentation-image img{
+    height: 500px;
+    width: 85%;
+}
+
+button{
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.btn-fill{
+    padding: 1.2em 3em;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+    background: hsl(322, 100%, 66%);
+ 
+}
+ 
+.grow-together-section
+{
+    background: url("../images/bg-section-bottom-desktop-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+}
+ 
+.your-users{
+    background: url("../images/bg-section-bottom-desktop-2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+}
+
+.social-reaction-content, 
+.grow-together-section-content, 
+.conversation-section-content, 
+.your-users-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    padding: 1% 5%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    padding: 1em 0;
+    width: 85%;
+    z-index: 99;
+}
+
+.social-reaction{
+    text-align: center;
+}
+
+.social-reaction h1{
+    font-size: 4em;
+}
+.social-reaction p{
+    color:#808080;
+    font-size: 19px;
+    opacity: 0.7;
+}
+
+
+.grow-together-section .grow-2,
+.conversations-section .conversation,
+.your-users .user 
+{
+    padding: 1.5em;
+}
+
+.call-to-action{
+    text-align: center;
+    margin: 2em 0;
+    padding: 2em 0;
+}
+.call-to-action h1{
+    padding: 1.5em 0;
+}
+
+
+ /* footer section */
+.footer-top{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    border: none;
+
+}
+.footer-top::after{
+    content: '';
+    font-size: 20px;
+    background: url("../images/bg-footer-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* footer bottom */
+
+.footer-bottom{
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    color: white;
+    background:hsl(192, 100%, 9%);
+    padding: 3% 10%;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    text-align: left;
+    justify-content: center;
+}
+
+.our-company{
+    text-align: left;
+    justify-content: left;
+}
+
+.company-info h1{
+    color: #fff;
+    font-size: 2.2em;
+    text-align: left;
+    margin-left: 5px;
+}
+.company-info h1, .company-info p {
+    margin: 20px 0;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: ; */
+    margin: 10px 0;
+}
+
+.social-links img{
+    margin: 10px 0;
+    padding: 10px 0;
+
+}
+
+
+.newsletters > section{
+    margin: 2em 0;
+}
+
+.news-info h1{
+    color: #fff;
+    font-size: 2.2em;
+    margin: 10px 0;
+}
+
+.subscribe input{
+    padding: 13px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    width: 60%;
+}
+
+.news-btn{
+    border-radius: 10px !important;
+    padding: 10px;
+    width: 30%;
+}
+
+@media(max-width: 420px){
+    
+    nav h1 img{
+        height: 30px;
+        width: 100px;
+    }
+
+    p{
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    h1, h2, h3, h4{
+        text-align: center;
+    }
+
+    main{
+        padding: 3% 5%;
+    }
+
+    .top-presentation{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+        padding: 1% 2%;
+    } 
+
+    .top-presentation h1{
+        text-align: center;
+        justify-content: center;
+        padding: 0 4%;
+        font-size: 1.5em;
+        margin: 10px;
+        align-content: center;
+    }
+    .top-presentation p{
+        font-size: 13px;
+        text-align: ;
+    }
+
+    .presentation-image img{
+        height:250px ;
+        width: 300px;
+    }
+    
+.social-reaction, 
+.grow-together-section, 
+.conversations-section, 
+.your-users{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1em 0;
+    padding:2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-together-section h1, 
+.conversations-section h1, 
+.your-users h1{
+    font-size: 1.8em;
+}
+
+.grow-together-section p, 
+.conversations-section p, 
+.your-users p{
+    padding: 0 4em;
+}
+
+.grow-illustration, 
+.conversation-illustration, 
+.users-illustration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.grow-illustration img, 
+.conversation-illustration img, 
+.users-illustration img{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action button{
+    padding: 10px;
+    font-size: 20px;
+}
+.call-to-action h1{
+    padding: 1.5em 0;
+    font-size: 1.8em;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.our-company{
+    order: 2;
+}
+
+.newsletters{
+    order: 1;
+}
+.newsletters .subscribe{
+    text-align: right;
+    justify-content: right;
+}
+.subscribe input{
+    padding: 15px;
+    display: block;
+    width: 100%;
+
+}
+.subscribe button{
+    margin: 10px 0;
+    padding: 15px;
+    width: 50%;
+}
+}
+
+
+
+

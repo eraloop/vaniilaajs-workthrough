@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    box-sizing: border-box;
+    /* font-family: 'Rubik'; */
+    font-family: 'poppins';
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    background:  hsl(270, 20%, 96%) ;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    grid-gap: 10em;
+}
+
+.chat-sec-with-background{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.background{
+    background: linear-gradient( 
+        to top, 
+        hsl(264, 100%, 61%) ,
+        hsl(293, 100%, 63%)
+        );
+    height: 90vh;
+    width: 450px;
+    border-radius: 0 0 230px 230px;
+    position: relative;
+    top: 0;
+    right: 100px;
+}
+
+.phone{
+    height: auto;
+    width: 220px;
+    border: 10px solid white ;
+    border-radius: 2em;
+    box-shadow: 0px 10px 15px -10px #333;
+    z-index: 999;
+    position: absolute;
+    top: 120px ;
+    left:300px ;
+}
+
+.phone-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient( 
+        to right,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%)
+         );
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.name h3{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.name p{
+    font-size: 10px;
+    letter-spacing: 1.1;
+    color:  hsl(276, 100%, 81%);
+}
+
+.profile-img{
+    height: 35px;
+    width: 35px;
+    border: 2.5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.input-div{
+    background: linear-gradient( 
+        to right,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%)
+         );
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.phone .input-div input{
+    padding: 4px;
+    border-radius: 10px;
+    border-top: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+    top: -3px;
+    left: 40px;
+    border-top: 0;
+    border: 0;
+    width: 120px;
+    outline: none;
+    cursor: none;
+}
+.phone-body{
+    background: hsl(270, 20%, 96%);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    border-radius: 0  0 25px 25px ;
+}
+
+.phone-body img{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+.send-msg img {
+    height: 10px;
+    width: 10px;
+    background:hsl(271, 36%, 24%) ;
+    padding: 10px;
+    z-index: 77;
+}
+.left .body-img{
+    height: 10px;
+    width: 10px;
+    color:  hsl(289, 100%, 72%); 
+}
+.btn-like-text{
+    padding: 6px;
+    background: linear-gradient( 
+        to left,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%)
+         );
+    border-radius: 10px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.price{
+    font-weight: 500;
+}
+.phone-body p{
+    margin: 10px 0;
+}
+.left{
+    position: relative;
+    top: 0;
+    right: 15px;
+    color:hsl(276, 55%, 52%) ;
+}
+
+.right{
+    position: relative;
+    top: 0;
+    left: 15px;
+    color:  hsl(271, 15%, 43%);
+}
+.chat-bg{
+    background: hsl(270, 7%, 64%);
+    border-radius: 5px;
+    padding:7px ;
+}
+.send-msg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.send-msg input{
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: hsl(270, 7%, 64%) ;
+    color: hsl(206, 6%, 79%);
+}
+.presentation h1{
+    color:hsl(271, 36%, 24%) ;
+    font-size:1.7em ;
+    padding: 10px 0;
+    letter-spacing: 1.1;
+    margin: 10px 0;
+}
+
+.presentation p{
+    color: hsl(270, 7%, 64%);
+    line-height: 1.5;
+}
+
+@media(max-width: 400px){
+    .container-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 6em;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    .background{
+        height: 70vh;
+        width: 400px;
+        border-radius: 0 0 230px 230px;
+        position: relative;
+        top: 0;
+        right: 130px;
+    }
+    .phone{
+        position: absolute;
+        top: 80px ;
+        left:100px ;
+    }
+    
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        padding: 5% 2% 10%;
+        margin: 0 1em 2em;
+        position: relative;
+        top: 0;
+        left: 30px;
+    }
+    .presentation h1{
+        font-size: 2.2em;
+    }
+    .presentation p{
+        text-align: center;
+    }
+
+}
